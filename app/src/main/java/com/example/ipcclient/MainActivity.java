@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         serviceIntent = new Intent();
         serviceIntent.setComponent(new ComponentName("com.example.ipcserver",
                 "com.example.ipcserver.MyService"));
+        serviceIntent.setPackage(getPackageName());
     }
 
     @Override
